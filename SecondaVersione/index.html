@@ -5,11 +5,26 @@
         <meta http-equiv='X-UA-Compatible' content='IE=edge'>
         <meta name='viewport' content='width=device-width, initial-scale=1.0'>
         <title>Document</title>
-        <link rel='stylesheet' href='./style.css'>
+        <link rel='stylesheet' href='../style.css'>
     </head>
     <body>
 
         <div id='app'>
+
+            <main>
+                <section>
+
+                    <div v-for="(elem,index) in this.dataBase" class="cont-card">
+
+                        <img :src="elem.poster" alt="img">
+                        <h2>{{elem.title}}</h2>
+                        <h3>{{elem.author}}</h3>
+                        <span>{{elem.year}}</span>
+
+                    </div>
+                
+                <section>
+            </main>
             
         </div>
 
